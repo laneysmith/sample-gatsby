@@ -1,3 +1,8 @@
 name: sample-gatsby
 static_sites:
 - build_command: yarn build
+  envs:
+  - key: THINGY
+    value: default
+    scope: RUN_TIME
+    type: GENERAL
