@@ -1,6 +1,9 @@
 name: sample-gatsby
 static_sites:
 - build_command: yarn build
+  git:
+    repo_clone_url: https://github.com/laneysmith/sample-gatsby
+    branch: main
   envs:
   - key: THINGY
     value: default
