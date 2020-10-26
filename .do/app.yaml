@@ -1,13 +1,16 @@
 name: sample-gatsby
 static_sites:
 - build_command: yarn build
-  name: asjhsdasdasd
-  # environment_slug: gatsby
-  git:
-    repo_clone_url: https://github.com/laneysmith/sample-gatsby
-    branch: main
+  environment_slug: gatsby # optional
+  git: # required
+    repo_clone_url: https://github.com/laneysmith/sample-gatsby # required
+    branch: main # required
   envs:
   - key: THINGY
-    value:
+    value: 
+    scope: RUN_TIME
+    type: GENERAL
+  - key: ANOTHER_THINGY
+    value: blah
     scope: RUN_TIME
     type: GENERAL
